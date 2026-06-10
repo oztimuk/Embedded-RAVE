@@ -59,6 +59,23 @@ If you attempt to use the "Find externals" in PureData to get nn~ working, it wi
 
 This will allow you to install nn~ correctly.
 
+### Get Pd working with your model...
+
+A simple setup works best here. 
+
+```
+[adc~]
+|
+[nn~ modelname.ts encode]
+|
+[nn~ modelname.ts decode]
+|
+[dac~]
+
+```
+
+Obviously you can create your own patch that will mix the original signal into the final output or anything else you need to do. I've not included a patch for this as your use case may be very different. 
+
 ### Train Model
 
 To train the model you will need a paid account with Google Colab. This is because you need to use a GPU for an extended period of time, and the free tiers won't allow for that kind of time.
@@ -75,4 +92,8 @@ If you want to use your own dataset make sure that the training data has at very
   * Adversarial Training - Doesn't stop, so you will need to pick a point to stop it. The video on training a model will help you decided when to stop. Use of Tensorboard will help a lot. Don't be afraid to stop training so you can hear a new version. The notebook includes the code to restart training after you stop it.
 
 ## What my work in progress prototype looks like:
+
+<img width="4000" height="3000" alt="image" src="https://github.com/user-attachments/assets/c12d62b9-84d0-4e76-aed7-9e38a207f1b8" />
+<img width="4000" height="3000" alt="image" src="https://github.com/user-attachments/assets/8699411b-d127-4170-888a-2ff651400143" />
+
 
