@@ -76,6 +76,8 @@ A simple setup works best here.
 
 Obviously you can create your own patch that will mix the original signal into the final output or anything else you need to do. I've not included a patch for this as your use case may be very different. 
 
+My own patch allows for manipilation of the latent vectors to get more musical results. 
+
 If you attempt to use most of the pre-made IRCAM RAVE models you may have huge issues with latency. This is why I'd recommend creating your own model using ```--causal``` and the ```raspberry``` config. If you use the Colab notebook this is already taken care of. 
 
 ### Train Model
